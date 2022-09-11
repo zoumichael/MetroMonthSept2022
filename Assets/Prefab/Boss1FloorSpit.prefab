@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3808111831211017710}
   - component: {fileID: 7259032024417809313}
+  - component: {fileID: 6043373170537520815}
   - component: {fileID: 5502809550053880227}
   - component: {fileID: -4417737698176916060}
-  - component: {fileID: 5555492730458599613}
   m_Layer: 11
-  m_Name: Boss1Spit
+  m_Name: Boss1FloorSpit
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,6 +87,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6043373170537520815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688825745825808942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717035a9a61c7884188e82f26fe1d298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyAfter: 10
+  destroyAfterOnGround: 5
+  timeToSpawnLeftRight: 0.1
+  spitFloorAttack: {fileID: 2688825745825808942}
 --- !u!61 &5502809550053880227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -134,16 +150,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5555492730458599613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2688825745825808942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b15df79971af841b2b3026f69fa835, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyAfter: 10

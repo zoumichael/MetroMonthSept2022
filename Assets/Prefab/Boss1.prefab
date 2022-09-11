@@ -106,8 +106,9 @@ MonoBehaviour:
   attackCounterMax: 1
   dashSpeed: 10
   dashTime: 3
-  player: {fileID: 0}
-  spitAttack: {fileID: 2688825745825808942, guid: 75ec530d2a34cdc4aa3228c37d657d66, type: 3}
+  player: {fileID: 4692173237415530193, guid: b7a91d014fe7f9f43b450c5261769f13, type: 3}
+  spitAttack: {fileID: 2688825745825808942, guid: 40807c80cb7d2504ba1ef04444836523, type: 3}
+  spitFloorAttack: {fileID: 2688825745825808942, guid: 75ec530d2a34cdc4aa3228c37d657d66, type: 3}
 --- !u!50 &1384479052
 Rigidbody2D:
   serializedVersion: 4

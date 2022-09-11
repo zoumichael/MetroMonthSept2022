@@ -33,7 +33,7 @@ public class BossSpitMovement : MonoBehaviour
         }
     }
 
-    public void setTrajectory(float hspeed, float vspeed)
+    public void SetTrajectory(float hspeed, float vspeed)
     {
         rb.velocity = new Vector2(hspeed, vspeed);
     }

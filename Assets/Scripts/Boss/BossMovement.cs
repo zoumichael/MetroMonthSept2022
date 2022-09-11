@@ -27,13 +27,15 @@ public class BossMovement : MonoBehaviour
 
     // Spit Attack
     [SerializeField] private GameObject spitAttack;
+    [SerializeField] private GameObject spitFloorAttack;
 
     private enum MovementState
     {
         IDLE,
-        SPIT,
+        SPIT1,
+        SPIT2,
         DASH
-        //idle=0,spit=1,dash=2
+        //idle=0,spit1=1,spit2=2,dash=3
     }
     private MovementState moveState = MovementState.IDLE;
 
@@ -85,16 +87,25 @@ public class BossMovement : MonoBehaviour
         attackCounter += Time.deltaTime; 
         if (!dashing && attackCounter > attackCounterMax)
         {
-            int attackType = Random.Range(0, 2);
+            int attackType = Random.Range(0, 3);
+            //int attackType = 2;
 
             if(attackType == 0)
             {
+                Debug.Log("Dash Attack!");
                 DashTowardsPlayer();
                 attackCounter = 0;
             }
-            else if(attackType == 1)
+            else if (attackType == 1)
             {
+                Debug.Log("Spit Attack!");
                 SpitAttack();
+                attackCounter = 0;
+            }
+            else if (attackType == 2)
+            {
+                Debug.Log("Floor Attack!");
+                FloorAttack();
                 attackCounter = 0;
             }
         }
@@ -133,12 +144,27 @@ public class BossMovement : MonoBehaviour
         GameObject temp = Instantiate(spitAttack, spitSpawnLocation, Quaternion.identity);
         if (player.transform.position.x > transform.position.x)
         {
-            temp.GetComponent<BossSpitMovement>().setTrajectory(10f, 5f);
+            temp.GetComponent<BossSpitMovement>().SetTrajectory(10f, 5f);
         }
         else
         {
-            temp.GetComponent<BossSpitMovement>().setTrajectory(-10f, 5f);
+            temp.GetComponent<BossSpitMovement>().SetTrajectory(-10f, 5f);
         }
             
+    }
+
+    void FloorAttack()
+    {
+        Vector3 spitSpawnLocation = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        GameObject temp = Instantiate(spitFloorAttack, spitSpawnLocation, Quaternion.identity);
+        if (player.transform.position.x > transform.position.x)
+        {
+            temp.GetComponent<BossFloorSpitMovement>().setTrajectory(5f, 10f);
+        }
+        else
+        {
+            temp.GetComponent<BossFloorSpitMovement>().setTrajectory(-5f, 10f);
+        }
+
     }
 }
