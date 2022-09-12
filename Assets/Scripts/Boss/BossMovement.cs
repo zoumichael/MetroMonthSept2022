@@ -24,7 +24,7 @@ public class BossMovement : MonoBehaviour
 
     // Other Components
     Rigidbody2D rb;
-
+    public Animator animator;
     // Spit Attack
     [SerializeField] private GameObject spitAttack;
     [SerializeField] private GameObject spitFloorAttack;
@@ -60,6 +60,7 @@ public class BossMovement : MonoBehaviour
         {
             UpdateHighHP();
         }
+        animator.SetInteger("moveState", (int) moveState);
     }
 
     void UpdateLowHP()
@@ -87,8 +88,8 @@ public class BossMovement : MonoBehaviour
         attackCounter += Time.deltaTime; 
         if (!dashing && attackCounter > attackCounterMax)
         {
-            int attackType = Random.Range(0, 3);
-            //int attackType = 2;
+            //int attackType = Random.Range(0, 3);
+            int attackType = 0;
 
             if(attackType == 0)
             {
@@ -130,6 +131,7 @@ public class BossMovement : MonoBehaviour
             Debug.Log("Dash Left");
             rb.velocity = new Vector2(-dashSpeed, rb.velocity.y);
         }
+        moveState = MovementState.DASH;
     }
 
     void StopDashing()
