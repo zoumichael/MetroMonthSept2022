@@ -77,6 +77,9 @@ public class PlayerRespawn : MonoBehaviour
         rb.transform.position = new Vector3(respawnX, respawnY, 0);
     }
 
+    [SerializeField] private float verticalRecoil = 2;
+    [SerializeField] private float horizontalRecoil = 3;
+
     public void TakeDamage(Collision2D collision)
     {
         // Update HP Bar
@@ -97,13 +100,14 @@ public class PlayerRespawn : MonoBehaviour
 
         if (collision.gameObject.CompareTag("EnemyAttack"))
         {
+            // 
             if(YOffset < -1.5)
             {
-                rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil * 3, 0, 0);
+                rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil * horizontalRecoil, 0, 0);
             }
             else
             {
-                rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil, recoil * 2, 0);
+                rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil, recoil * verticalRecoil, 0);
             }
         }
         else
