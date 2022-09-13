@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8d31a5d4e6ad2d048985fbfd3c07880a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c5fe5d3cfa31df49a95e6725c117ee3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,14 +101,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5cbdf29406480442940af5abf89901e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 2176894438423391417}
   maxHP: 100
   currHP: 100
   hpThreshold1: 33
   hpThreshold2: 66
   attackCounterMax: 1
   dashSpeed: 10
-  dashTime: 3
-  player: {fileID: 4692173237415530193, guid: b7a91d014fe7f9f43b450c5261769f13, type: 3}
+  dashTime: 2.5
+  player: {fileID: 0}
   spitAttack: {fileID: 2688825745825808942, guid: 40807c80cb7d2504ba1ef04444836523, type: 3}
   spitFloorAttack: {fileID: 2688825745825808942, guid: 75ec530d2a34cdc4aa3228c37d657d66, type: 3}
 --- !u!50 &1384479052

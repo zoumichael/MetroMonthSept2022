@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.7169812, g: 0.7136655, b: 0.29423285, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 84de7b4cdba47254e85c73479f61a90e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717035a9a61c7884188e82f26fe1d298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 7259032024417809313}
+  horizontal: {fileID: 21300000, guid: c7efc72314ec7be4685549fab3dc468d, type: 3}
+  down: {fileID: 21300000, guid: 84de7b4cdba47254e85c73479f61a90e, type: 3}
+  ground: {fileID: 21300000, guid: cc9d9e7511a474b43a780bf6fb07eed2, type: 3}
   destroyAfter: 10
   destroyAfterOnGround: 5
   timeToSpawnLeftRight: 0.1
@@ -149,4 +153,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

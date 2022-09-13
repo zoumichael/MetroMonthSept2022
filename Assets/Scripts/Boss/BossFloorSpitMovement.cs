@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class BossFloorSpitMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private Animator animator;
+    private Rigidbody2D rb; 
+    public SpriteRenderer sr;
+
+    [SerializeField] Sprite horizontal;
+    [SerializeField] Sprite down;
+    [SerializeField] Sprite ground;
+
     [SerializeField] private float destroyAfter;
 
     private bool onTheGround = false;
@@ -69,9 +74,11 @@ public class BossFloorSpitMovement : MonoBehaviour
         }
     }
 
-    public void setTrajectory(float hspeed, float vspeed)
+    public void SetTrajectory(float hspeed, float vspeed)
     {
         rb.velocity = new Vector2(hspeed, vspeed);
+        if (hspeed > 0)
+            sr.flipX = true;
     }
 
     public void updateMovementState()
@@ -79,10 +86,14 @@ public class BossFloorSpitMovement : MonoBehaviour
         if (rb.velocity.y > 0.5f)
         {
             moveState = MovementState.GOINGUP;
+            sr.sprite = down;
+            sr.flipY = true;
         }
         else if(rb.velocity.y < -0.5f)
         {
             moveState = MovementState.GOINGDOWN;
+            sr.sprite = down;
+            sr.flipY = false;
         }
         else
         {
@@ -92,6 +103,8 @@ public class BossFloorSpitMovement : MonoBehaviour
                 onTheGround = true;
                 moveState = MovementState.ONTHEGROUND;
                 rb.velocity = new Vector2(0, 0);
+                sr.sprite = ground;
+                sr.flipY = false;
             }
         }
         //animator.SetInteger("moveState", (int) moveState);

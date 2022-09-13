@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class BossMovement : MonoBehaviour
 {
+    // Other Components
+    Rigidbody2D rb;
+    public Animator animator;
+    private SpriteRenderer sprite;
+
     // Boss HP
     [SerializeField] private float maxHP;
     public float currHP;
@@ -22,45 +27,72 @@ public class BossMovement : MonoBehaviour
     // Player
     [SerializeField] private GameObject player;
 
-    // Other Components
-    Rigidbody2D rb;
-    public Animator animator;
     // Spit Attack
     [SerializeField] private GameObject spitAttack;
     [SerializeField] private GameObject spitFloorAttack;
 
+    bool faceRight = false;
+
+    bool attacking = false;
+
+    int spitType = 1;
+
+    bool aggroed = false;
+
     private enum MovementState
     {
         IDLE,
-        SPIT1,
-        SPIT2,
-        DASH
-        //idle=0,spit1=1,spit2=2,dash=3
+        SPIT,
+        DASH,
+        SLEEP,
+        WAKE
+        //idle=0,spit=1,dash=2,sleep=3
     }
-    private MovementState moveState = MovementState.IDLE;
+    private MovementState moveState = MovementState.SLEEP;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         currHP = maxHP;
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(currHP < hpThreshold1)
+        if (aggroed)
         {
-            UpdateLowHP();
+            if (currHP < hpThreshold1)
+            {
+                UpdateLowHP();
+            }
+            else if (currHP < hpThreshold2)
+            {
+                UpdateMidHP();
+            }
+            else
+            {
+                UpdateHighHP();
+            }
+            if (!dashing)
+                UpdateDirection();
         }
-        else if(currHP < hpThreshold2)
+        animator.SetInteger("moveState", (int) moveState);
+    }
+
+    void UpdateDirection()
+    {
+        if(player.transform.position.x > transform.position.x)
         {
-            UpdateMidHP();
+            faceRight = true;
+            sprite.flipX = true;
         }
         else
         {
-            UpdateHighHP();
+            faceRight = false;
+            sprite.flipX = false;
         }
-        animator.SetInteger("moveState", (int) moveState);
     }
 
     void UpdateLowHP()
@@ -84,12 +116,14 @@ public class BossMovement : MonoBehaviour
 
     void UpdateHighHP()
     {
-        
-        attackCounter += Time.deltaTime; 
+        if(!attacking || dashing)
+            attackCounter += Time.deltaTime; 
+
         if (!dashing && attackCounter > attackCounterMax)
         {
+            attacking = true;
             //int attackType = Random.Range(0, 3);
-            int attackType = 0;
+           int attackType = 0;
 
             if(attackType == 0)
             {
@@ -100,13 +134,16 @@ public class BossMovement : MonoBehaviour
             else if (attackType == 1)
             {
                 Debug.Log("Spit Attack!");
-                SpitAttack();
+                moveState = MovementState.SPIT;
+                spitType = 0;
+                //SpitAttack();
                 attackCounter = 0;
             }
             else if (attackType == 2)
             {
                 Debug.Log("Floor Attack!");
-                FloorAttack();
+                moveState = MovementState.SPIT;
+                spitType = 1;
                 attackCounter = 0;
             }
         }
@@ -137,36 +174,61 @@ public class BossMovement : MonoBehaviour
     void StopDashing()
     {
         dashing = false;
+        attacking = false;
         rb.velocity = new Vector2(0, rb.velocity.y);
+        moveState = MovementState.IDLE;
     }
 
     void SpitAttack()
     {
         Vector3 spitSpawnLocation = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        GameObject temp = Instantiate(spitAttack, spitSpawnLocation, Quaternion.identity);
-        if (player.transform.position.x > transform.position.x)
+
+        GameObject temp;
+        if (spitType == 0)
         {
-            temp.GetComponent<BossSpitMovement>().SetTrajectory(10f, 5f);
+            temp = Instantiate(spitAttack, spitSpawnLocation, Quaternion.identity);
+            if (faceRight)
+            {
+                temp.GetComponent<BossSpitMovement>().SetTrajectory(10f, 5f);
+            }
+            else
+            {
+                temp.GetComponent<BossSpitMovement>().SetTrajectory(-10f, 5f);
+            }
         }
-        else
-        {
-            temp.GetComponent<BossSpitMovement>().SetTrajectory(-10f, 5f);
+        else if (spitType == 1) 
+        { 
+            temp = Instantiate(spitFloorAttack, spitSpawnLocation, Quaternion.identity);
+            if (faceRight)
+            {
+                temp.GetComponent<BossFloorSpitMovement>().SetTrajectory(5f, 5f);
+            }
+            else
+            {
+                temp.GetComponent<BossFloorSpitMovement>().SetTrajectory(-5f, 5f);
+            }
         }
-            
     }
 
-    void FloorAttack()
+    public void TEST()
     {
-        Vector3 spitSpawnLocation = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        GameObject temp = Instantiate(spitFloorAttack, spitSpawnLocation, Quaternion.identity);
-        if (player.transform.position.x > transform.position.x)
-        {
-            temp.GetComponent<BossFloorSpitMovement>().setTrajectory(5f, 10f);
-        }
-        else
-        {
-            temp.GetComponent<BossFloorSpitMovement>().setTrajectory(-5f, 10f);
-        }
+        Debug.Log("TESTING");
+    }
 
+    public void StopAttack()
+    {
+        Debug.Log("Attack Stopped");
+        attacking = false;
+        moveState = MovementState.IDLE;
+    }
+
+    public void Wake()
+    {
+        moveState = MovementState.WAKE;
+    }
+
+    public void Aggro()
+    {
+        aggroed = true;
     }
 }

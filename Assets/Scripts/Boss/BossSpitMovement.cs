@@ -5,7 +5,11 @@ using UnityEngine;
 public class BossSpitMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private Animator animator;
+    private SpriteRenderer sr;
+
+    [SerializeField] Sprite horizontal;
+    [SerializeField] Sprite down;
+    [SerializeField] Sprite ground;
     [SerializeField] private float destroyAfter;
 
     private enum MovementState
@@ -19,7 +23,7 @@ public class BossSpitMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -36,6 +40,8 @@ public class BossSpitMovement : MonoBehaviour
     public void SetTrajectory(float hspeed, float vspeed)
     {
         rb.velocity = new Vector2(hspeed, vspeed);
+        if (hspeed > 0)
+            sr.flipX = true;
     }
 
     public void updateMovementState()
@@ -43,10 +49,14 @@ public class BossSpitMovement : MonoBehaviour
         if (rb.velocity.y > 0.5f)
         {
             moveState = MovementState.GOINGUP;
+            sr.sprite = down;
+            sr.flipY = true;
         }
         else if(rb.velocity.y < -0.5f)
         {
             moveState = MovementState.GOINGDOWN;
+            sr.sprite = down;
+            sr.flipY = false;
         }
         else
         {
@@ -55,6 +65,8 @@ public class BossSpitMovement : MonoBehaviour
                 Debug.Log("landed");
                 moveState = MovementState.ONTHEGROUND;
                 rb.velocity = new Vector2(0, 0);
+                sr.sprite = ground;
+                sr.flipY = false;
             }
         }
         //animator.SetInteger("moveState", (int) moveState);
