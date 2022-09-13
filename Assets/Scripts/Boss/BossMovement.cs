@@ -42,6 +42,9 @@ public class BossMovement : MonoBehaviour
     [SerializeField] private float leftBound;
     [SerializeField] private float rightBound;
 
+    [SerializeField] private float flashDuration = 0.2f;
+    private float flashCounter = 0.0f;
+
     private enum MovementState
     {
         IDLE,
@@ -68,11 +71,11 @@ public class BossMovement : MonoBehaviour
         {
             if (currHP < hpThreshold1)
             {
-                UpdateLowHP();
+                UpdateHighHP();
             }
             else if (currHP < hpThreshold2)
             {
-                UpdateMidHP();
+                UpdateHighHP();
             }
             else
             {
@@ -82,6 +85,11 @@ public class BossMovement : MonoBehaviour
                 UpdateDirection();
         }
         animator.SetInteger("moveState", (int) moveState);
+        if (flashCounter > 0f)
+            flashCounter -= Time.deltaTime;
+        else
+            sprite.color = new Color(255, 255, 255);
+
         KeepInBounds();
     }
 
@@ -224,6 +232,22 @@ public class BossMovement : MonoBehaviour
             {
                 temp.GetComponent<BossFloorSpitMovement>().SetTrajectory(-5f, 5f);
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerAttack"))
+        {
+            Debug.Log("Boss Hit");
+            currHP -= 10;
+            if (currHP <= 0)
+            {
+                Destroy(gameObject);
+            }
+            Destroy(collision);
+            sprite.color = new Color(255, 0, 0);
+            flashCounter = flashDuration;
         }
     }
 

@@ -94,7 +94,22 @@ public class PlayerRespawn : MonoBehaviour
         float YOffset = transform.position.y - collision.gameObject.transform.position.y;
         Debug.Log("X: " + XOffset + " Y: " + YOffset);
 
-        rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil *2, /*YOffset / Mathf.Abs(YOffset) **/ recoil, 0);
+
+        if (collision.gameObject.CompareTag("EnemyAttack"))
+        {
+            if(YOffset < -1.5)
+            {
+                rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil * 3, 0, 0);
+            }
+            else
+            {
+                rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil, recoil * 2, 0);
+            }
+        }
+        else
+        {
+            rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil, YOffset / Mathf.Abs(YOffset) * recoil, 0);
+        }
 
         // Lock Player Movement
         GetComponent<PlayerMovement>().damaged();

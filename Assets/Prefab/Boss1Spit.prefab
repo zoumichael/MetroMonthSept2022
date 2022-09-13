@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b15df79971af841b2b3026f69fa835, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bc: {fileID: 5502809550053880227}
   horizontal: {fileID: 21300000, guid: c7efc72314ec7be4685549fab3dc468d, type: 3}
   down: {fileID: 21300000, guid: 84de7b4cdba47254e85c73479f61a90e, type: 3}
   ground: {fileID: 21300000, guid: cc9d9e7511a474b43a780bf6fb07eed2, type: 3}

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1384479052}
   - component: {fileID: 1384479053}
   - component: {fileID: 2176894438423391417}
+  - component: {fileID: -8829596261476185848}
   m_Layer: 8
   m_Name: Boss1
   m_TagString: Enemy
@@ -114,6 +115,7 @@ MonoBehaviour:
   spitFloorAttack: {fileID: 2688825745825808942, guid: 75ec530d2a34cdc4aa3228c37d657d66, type: 3}
   leftBound: 0
   rightBound: 0
+  flashDuration: 0.2
 --- !u!50 &1384479052
 Rigidbody2D:
   serializedVersion: 4
@@ -181,6 +183,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &-8829596261476185848
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2501793220408194864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000047683716, y: 1.8160717}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.73508835, y: 0.3678565}
+  m_EdgeRadius: 0
 --- !u!1 &8280755317520352437
 GameObject:
   m_ObjectHideFlags: 0
