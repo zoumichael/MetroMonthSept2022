@@ -18,7 +18,8 @@ public class PlayerRespawn : MonoBehaviour
 
     // After taking damage, prevent you from taking damage after a while.
     [SerializeField] private float damageLockOut;
-    private float damageLockOutCounter;
+    private float damageLockOutCounter = 0;
+    private bool immune = false;
 
     void Start()
     {
@@ -28,15 +29,25 @@ public class PlayerRespawn : MonoBehaviour
     private void Update()
     {
         damageLockOutCounter -= Time.deltaTime;
+        if(immune && damageLockOutCounter < 0)
+        {
+            immune = false;
+            Physics.IgnoreLayerCollision(8, 13, false);
+            Physics.IgnoreLayerCollision(11, 13, false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") && damageLockOutCounter < 0)
+        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("EnemyAttack")) && damageLockOutCounter < 0)
         {
             Debug.Log("Collided with Enemy");
             TakeDamage(collision);
             damageLockOutCounter = damageLockOut;
+
+            immune = true;
+            Physics.IgnoreLayerCollision(8, 13);
+            Physics.IgnoreLayerCollision(11, 13);
         }
     }
 
@@ -82,7 +93,8 @@ public class PlayerRespawn : MonoBehaviour
         float XOffset = transform.position.x - collision.gameObject.transform.position.x;
         float YOffset = transform.position.y - collision.gameObject.transform.position.y;
         Debug.Log("X: " + XOffset + " Y: " + YOffset);
-        rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil, YOffset / Mathf.Abs(YOffset) * recoil, 0);
+
+        rb.velocity = new Vector3(XOffset / Mathf.Abs(XOffset) * recoil *2, /*YOffset / Mathf.Abs(YOffset) **/ recoil, 0);
 
         // Lock Player Movement
         GetComponent<PlayerMovement>().damaged();

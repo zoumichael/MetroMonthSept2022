@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     
     [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private LayerMask jumpablePlatform;
 
     [SerializeField] private float jumpSpeed = 14f;
     [SerializeField] private float moveSpeed = 7f;
@@ -182,7 +183,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        bool ground = Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        bool platform = Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpablePlatform);
+        return ground || platform;
     }
 
 }

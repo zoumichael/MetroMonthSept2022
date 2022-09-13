@@ -72,7 +72,7 @@ public class WalkingEnemy : MonoBehaviour
 
     void returnToRespawn()
     {
-        Debug.Log(Vector2.Distance(respawnObject.transform.position, transform.position));
+        //Debug.Log(Vector2.Distance(respawnObject.transform.position, transform.position));
         if (Vector2.Distance(respawnObject.transform.position, transform.position) < 1f)
         {
             Debug.Log("Reset");

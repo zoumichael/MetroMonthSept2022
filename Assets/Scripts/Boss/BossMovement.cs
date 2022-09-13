@@ -39,6 +39,9 @@ public class BossMovement : MonoBehaviour
 
     bool aggroed = false;
 
+    [SerializeField] private float leftBound;
+    [SerializeField] private float rightBound;
+
     private enum MovementState
     {
         IDLE,
@@ -79,6 +82,20 @@ public class BossMovement : MonoBehaviour
                 UpdateDirection();
         }
         animator.SetInteger("moveState", (int) moveState);
+        KeepInBounds();
+    }
+
+    void KeepInBounds()
+    {
+        if (transform.position.x < leftBound)
+        {
+            transform.position = new Vector2(leftBound, transform.position.y);
+        }
+
+        if (transform.position.x > rightBound)
+        {
+            transform.position = new Vector2(rightBound, transform.position.y);
+        }
     }
 
     void UpdateDirection()
@@ -122,8 +139,8 @@ public class BossMovement : MonoBehaviour
         if (!dashing && attackCounter > attackCounterMax)
         {
             attacking = true;
-            //int attackType = Random.Range(0, 3);
-           int attackType = 0;
+            int attackType = Random.Range(0, 3);
+            //int attackType = 2;
 
             if(attackType == 0)
             {
@@ -181,7 +198,7 @@ public class BossMovement : MonoBehaviour
 
     void SpitAttack()
     {
-        Vector3 spitSpawnLocation = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Vector3 spitSpawnLocation = new Vector3(transform.position.x, transform.position.y + 2f , transform.position.z);
 
         GameObject temp;
         if (spitType == 0)

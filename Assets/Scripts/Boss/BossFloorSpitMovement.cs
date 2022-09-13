@@ -6,6 +6,7 @@ public class BossFloorSpitMovement : MonoBehaviour
 {
     private Rigidbody2D rb; 
     public SpriteRenderer sr;
+    public BoxCollider2D bc;
 
     [SerializeField] Sprite horizontal;
     [SerializeField] Sprite down;
@@ -105,6 +106,9 @@ public class BossFloorSpitMovement : MonoBehaviour
                 rb.velocity = new Vector2(0, 0);
                 sr.sprite = ground;
                 sr.flipY = false;
+
+                bc.size = new Vector2(0.875646f, 0.1140336f);
+                bc.offset = new Vector2(-0.007182464f, -0.3630611f);
             }
         }
         //animator.SetInteger("moveState", (int) moveState);

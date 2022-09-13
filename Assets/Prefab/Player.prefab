@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610363443}
   - component: {fileID: 610363444}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: player light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 5502320654111368179}
   - component: {fileID: 271246771043315178}
   - component: {fileID: 6406848742514828521}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -266,6 +266,9 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
+  jumpablePlatform:
+    serializedVersion: 2
+    m_Bits: 4096
   jumpSpeed: 16
   moveSpeed: 10
   jumpSoundEffect: {fileID: 0}
@@ -294,7 +297,7 @@ MonoBehaviour:
   respawnY: 0
   hpManager: {fileID: 8108243309882593597, guid: 2cdb7699fe537884a9cc5713c500fbc6, type: 3}
   recoil: 4
-  damageLockOut: 0
+  damageLockOut: 0.3
 --- !u!114 &7344214605023576906
 MonoBehaviour:
   m_ObjectHideFlags: 0
