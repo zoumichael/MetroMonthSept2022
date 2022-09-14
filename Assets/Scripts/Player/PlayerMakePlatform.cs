@@ -39,7 +39,7 @@ public class PlayerMakePlatform : MonoBehaviour
         {
             waitTime = waitTimeBeforeRegerminate;
         }
-        if (Input.GetKey(KeyCode.K) && IsGrounded())
+        if (Input.GetKey(KeyCode.K) /*&& IsGrounded()*/)
         {
             if (waitTime <= 0)
             {
