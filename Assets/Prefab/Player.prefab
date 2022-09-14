@@ -49,7 +49,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.41
   m_Color: {r: 0.66723037, g: 0.9622642, b: 0.6902324, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.4
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -298,6 +298,8 @@ MonoBehaviour:
   hpManager: {fileID: 8108243309882593597, guid: 2cdb7699fe537884a9cc5713c500fbc6, type: 3}
   recoil: 4
   damageLockOut: 0.3
+  verticalRecoil: 2
+  horizontalRecoil: 3
 --- !u!114 &7344214605023576906
 MonoBehaviour:
   m_ObjectHideFlags: 0
