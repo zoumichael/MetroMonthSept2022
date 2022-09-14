@@ -3586,7 +3586,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9390973ecd858724d90603f1f9f4732c, type: 3}
+    m_Font: {fileID: 12800000, guid: c1933087fa5a04d428b6e0032f491959, type: 3}
     m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
@@ -3643,8 +3643,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 114}
-  m_SizeDelta: {x: 425.26, y: 132.72}
+  m_AnchoredPosition: {x: 9, y: 83}
+  m_SizeDelta: {x: 624.48, y: 161.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &578557844
 MonoBehaviour:
@@ -3667,8 +3667,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9390973ecd858724d90603f1f9f4732c, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: e3f56c2a6d909db41a6eabbb60cbb24f, type: 3}
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -3679,7 +3679,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: DEEP SEEDED
+  m_Text: deep seeded
 --- !u!222 &578557845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4173,7 +4173,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9390973ecd858724d90603f1f9f4732c, type: 3}
+    m_Font: {fileID: 12800000, guid: c1933087fa5a04d428b6e0032f491959, type: 3}
     m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0

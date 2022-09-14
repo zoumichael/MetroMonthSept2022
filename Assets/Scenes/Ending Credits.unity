@@ -334,7 +334,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9390973ecd858724d90603f1f9f4732c, type: 3}
+    m_Font: {fileID: 12800000, guid: c1933087fa5a04d428b6e0032f491959, type: 3}
     m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
@@ -345,7 +345,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 0.95
+    m_LineSpacing: 1.1
   m_Text: "Thank you for playing!\nThe Great Tree has been restored, but \nthe source
     of the corruption is still \nunknown...Your journeys are far from over...\n\nGame
     Concept:  Team Omenblade\nGame Design: Jake Stafford\nLevel Design: Jake Stafford\nEnemy
