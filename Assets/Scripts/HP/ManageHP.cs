@@ -31,6 +31,7 @@ public class ManageHP : MonoBehaviour
             healthCounter.Add(Instantiate(hpPrefab, hpSpawnLocation, Quaternion.identity));
             healthCounter[i].transform.SetParent(transform);
             healthCounter[i].GetComponent<HPCounterChange>().SetFullHP();
+            healthCounter[i].GetComponent<Image>().SetNativeSize();
         }
     }
 

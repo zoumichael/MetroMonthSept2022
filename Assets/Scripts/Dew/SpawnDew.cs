@@ -11,7 +11,8 @@ public class SpawnDew : MonoBehaviour
 
     public void SpawnRandomDew(int val)
     {
-        GameObject newDew = Instantiate(dewPrefab, transform.position, Quaternion.identity);
+        Vector2 loc = new Vector2(transform.position.x, transform.position.y + 1f);
+        GameObject newDew = Instantiate(dewPrefab, loc, Quaternion.identity);
         newDew.GetComponent<DewMain>().InitializeDew(val, Random.Range(-dewXRange, dewXRange), dewInitialY);
     }
 }

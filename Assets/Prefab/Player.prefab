@@ -277,6 +277,7 @@ MonoBehaviour:
   airborneMovespeed: 0.01
   glideDropSpeed: -2
   normalDropSpeed: -25
+  biomeChange: {fileID: 2725894743636943428, guid: 7b6fcba3fbaf75549b5ea46c4954bdcf, type: 3}
   damageLockOut: 0.3
 --- !u!114 &4692173237415530187
 MonoBehaviour:

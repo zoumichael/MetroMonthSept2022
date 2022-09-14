@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float glideDropSpeed;
     [SerializeField] private float normalDropSpeed;
 
+    [SerializeField] GameObject biomeChange;
+
     // After taking damage, lose control of the player for a while.
     [SerializeField] private float damageLockOut;
     private float damageLockOutCounter;
@@ -50,6 +52,12 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
 
         damageLockOutCounter = -1f;
+
+        if (biomeChange.GetComponent<ChangeScene>().getChange())
+        {
+            Vector2 pos = new Vector2(biomeChange.GetComponent<ChangeScene>().getPlayerX(), biomeChange.GetComponent<ChangeScene>().getPlayerY());
+            transform.position = pos;
+        }
     }
 
     // Update is called once per frame
