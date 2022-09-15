@@ -22,7 +22,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float airborneMovespeed;
 
     private bool isGliding;
-    static bool canGlide = true;
+    static bool canGlide = false;
+
+    public void addGlide() { canGlide = true; }
+
     [SerializeField] private float glideDropSpeed;
     [SerializeField] private float normalDropSpeed;
 
