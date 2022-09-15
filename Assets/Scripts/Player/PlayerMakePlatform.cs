@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMakePlatform : MonoBehaviour
 {
     // GLOBAL VARIABLE USED TO DETERMINE IF THE PLAYER CAN SPAWN A PLATFORM OR NOT.
-    public static bool CanGerminate = true;
+    public static bool CanGerminate = false;
 
     public void SetCanGerminate(bool val)
     {

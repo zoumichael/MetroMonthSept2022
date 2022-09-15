@@ -24,6 +24,11 @@ public class PlayerMovement : MonoBehaviour
     private bool isGliding;
     static bool canGlide = false;
 
+    static bool endGame = false;
+
+    public void setEndGame() { endGame = true; }
+    public bool getEndGame() { return endGame; }
+
     public void addGlide() { canGlide = true; }
 
     [SerializeField] private float glideDropSpeed;
