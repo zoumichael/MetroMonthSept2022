@@ -55,9 +55,9 @@ public class PlayerRespawn : MonoBehaviour
     {
         if(collision.CompareTag("Danger"))
         {
-            hpManager.GetComponent<ManageHP>().takeDamage();
-            Debug.Log("Collided with Danger");
-            //RespawnPlayer();
+            //hpManager.GetComponent<ManageHP>().takeDamage();
+            //Debug.Log("Collided with Danger");
+            RespawnPlayer();
         }
 
         if(collision.gameObject.name == "PlatformPowerup")
