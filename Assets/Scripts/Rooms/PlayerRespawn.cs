@@ -14,6 +14,9 @@ public class PlayerRespawn : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    [SerializeField] private bool respawn = false;
+    [SerializeField] private float respawning = 0.5f;
+
     [SerializeField] private float recoil;
 
     // After taking damage, prevent you from taking damage after a while.
@@ -34,6 +37,14 @@ public class PlayerRespawn : MonoBehaviour
             immune = false;
             Physics.IgnoreLayerCollision(8, 13, false);
             Physics.IgnoreLayerCollision(11, 13, false);
+        }
+        if (respawn)
+        {
+            respawning -= Time.deltaTime;
+            if(respawning < 0)
+            {
+                RespawnPlayer();
+            }
         }
     }
 
@@ -57,7 +68,9 @@ public class PlayerRespawn : MonoBehaviour
         {
             //hpManager.GetComponent<ManageHP>().takeDamage();
             //Debug.Log("Collided with Danger");
-            RespawnPlayer();
+            //RespawnPlayer();
+            respawn = true;
+            rb.bodyType = RigidbodyType2D.Static;
         }
 
         if(collision.gameObject.name == "PlatformPowerup")
@@ -69,12 +82,12 @@ public class PlayerRespawn : MonoBehaviour
         
     }
 
-    
-
-
     public void RespawnPlayer()
     {
         rb.transform.position = new Vector3(respawnX, respawnY, 0);
+        respawning = 0.5f;
+        respawn = false;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     [SerializeField] private float verticalRecoil = 2;
