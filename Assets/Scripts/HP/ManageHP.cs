@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ManageHP : MonoBehaviour
 {
-    [SerializeField] static List<GameObject> healthCounter = new List<GameObject>();
+    [SerializeField] public static List<GameObject> healthCounter = new List<GameObject>();
     [SerializeField] float HPLeft;
     [SerializeField] float HPOffset;
 
@@ -23,15 +23,19 @@ public class ManageHP : MonoBehaviour
         currentHp = maxHP;
         for (int i = 0; i<maxHP; i++)
         {
-            Vector3 hpSpawnLocation = new Vector3(
-                                                        transform.position.x + HPLeft + HPOffset * i,
-                                                        transform.position.y,
-                                                        transform.position.z);
-            Debug.Log("Added HP Counter at " + hpSpawnLocation);
-            healthCounter.Add(Instantiate(hpPrefab, hpSpawnLocation, Quaternion.identity));
-            healthCounter[i].transform.SetParent(transform);
-            healthCounter[i].GetComponent<HPCounterChange>().SetFullHP();
-            healthCounter[i].GetComponent<Image>().SetNativeSize();
+            //if (!healthCounter[i])
+            {
+
+                Vector3 hpSpawnLocation = new Vector3(
+                                                            transform.position.x + HPLeft + HPOffset * i,
+                                                            transform.position.y,
+                                                            transform.position.z);
+                Debug.Log("Added HP Counter at " + hpSpawnLocation);
+                healthCounter.Add(Instantiate(hpPrefab, hpSpawnLocation, Quaternion.identity));
+                healthCounter[i].transform.SetParent(transform);
+                healthCounter[i].GetComponent<HPCounterChange>().SetFullHP();
+                healthCounter[i].GetComponent<Image>().SetNativeSize();
+            }
         }
     }
 
