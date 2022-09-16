@@ -1,0 +1,56 @@
+Event	ID	Name			Wwise Object Path	Notes
+	98439365	Play_Player_FootSteps			\Default Work Unit\Play_Player_FootSteps	
+	620878633	Music_GamePlay			\Default Work Unit\Music_Folder\Music_GamePlay	
+	701652841	Music_Tree			\Default Work Unit\Music_Folder\Music_Tree	
+	1078688352	Music_Exploration			\Default Work Unit\Music_Folder\Music_Exploration	
+	1900161504	Boss1_Die			\Default Work Unit\Music_Folder\Boss1_Die	
+	2720352881	Play_Crystal_AMB			\Default Work Unit\Play_Crystal_AMB	
+	3157003241	Test			\Default Work Unit\Test	
+	3258538016	Music_Biome1			\Default Work Unit\Music_Folder\Music_Biome1	
+	3258538019	Music_Biome2			\Default Work Unit\Music_Folder\Music_Biome2	
+	3692500719	Boss2_Die			\Default Work Unit\Music_Folder\Boss2_Die	
+	3944980085	Music_Combat			\Default Work Unit\Music_Folder\Music_Combat	
+	3991942870	Music			\Default Work Unit\Music_Folder\Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	450540413	Music_Exploration_States			\Default Work Unit\Music_Exploration_States	
+	975021336	Biome1			\Default Work Unit\Biome1	
+	975021339	Biome2			\Default Work Unit\Biome2	
+	1690668539	Music_States			\Default Work Unit\Music_States	
+	4064220498	Music_GamePlay_States			\Default Work Unit\Music_GamePlay_States	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_Exploration_States			
+	975021336	Biome1	Music_Exploration_States			
+	975021339	Biome2	Music_Exploration_States			
+	3322072369	Tree	Music_Exploration_States			
+	748895195	None	Biome1			
+	1534528633	V2	Biome1			
+	1534528634	V1	Biome1			
+	748895195	None	Biome2			
+	1969791524	V2_	Biome2			
+	1986569297	V1_	Biome2			
+	89505537	GamePlay	Music_States			
+	748895195	None	Music_States			
+	3705726509	Title	Music_States			
+	748895195	None	Music_GamePlay_States			
+	2582085496	Exploration	Music_GamePlay_States			
+	2764240573	Combat	Music_GamePlay_States			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	9652546	Player_FootSteps_Default_01	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Player_FootSteps_Default_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_FootSteps\Player_FootSteps_Default_01		22988
+	44555769	Title_77_4-4_15_25_M1	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Title_77_4-4_15.25_M1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\Title_77_4-4_15_25_M1\Title_77_4-4_15_25_M1		7835100
+	219696849	Test	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Soundly Audio\Scifi, Computer, Futuristic Technology, Confirm Tones, Short, Simple SND58788 1_60A7AFE1.wem		\Actor-Mixer Hierarchy\Soundly\Test		94504
+	301277613	Biome1_Version1_80_4-4_104_M1	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Biome1_Version1_80_4-4_104_M1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\GamePlay\Exploration\Biome1\Biome1_Version1_80_4-4_104_M1\Biome1_Version1_80_4-4_104_M1		55037024
+	318344466	Player_FootSteps_Default_05	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Player_FootSteps_Default_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_FootSteps\Player_FootSteps_Default_05		17052
+	416949996	BossBattle_Intro_195_4-4_8_M1	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\BossBattle_Intro_195_4-4_8_M1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\GamePlay\Combat\BossBattle_Intro_195_4-4_8_M1\BossBattle_Intro_195_4-4_8_M1		1737052
+	433422915	Player_FootSteps_Default_03	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Player_FootSteps_Default_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_FootSteps\Player_FootSteps_Default_03		17182
+	453793483	BossBattle_Loop_195_4-4_52_M1	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\BossBattle_Loop_195_4-4_52_M1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\GamePlay\Combat\BossBattle_Loop_195_4-4_52_M1\BossBattle_Loop_195_4-4_52_M1		11289744
+	546435147	Player_FootSteps_Default_04	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Player_FootSteps_Default_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_FootSteps\Player_FootSteps_Default_04		18098
+	565659344	Biome2_Version1_100_6-4_40m_1m	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Biome2_Version1_100_6-4_40m_1m_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\GamePlay\Exploration\Biome2\Biome2_Version1_100_6-4_40m_1m\Biome2_Version1_100_6-4_40m_1m		25401824
+	637083855	GreatTree_77_4-4_44_25m_M1	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\GreatTree_77_4-4_44.25m_M1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\GamePlay\Exploration\GreatTree_77_4-4_44_25m_M1\GreatTree_77_4-4_44_25m_M1		24329680
+	680299691	Player_FootSteps_Default_02	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Player_FootSteps_Default_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_FootSteps\Player_FootSteps_Default_02		20972
+	700385104	Spirite_Emitter	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Crystal_AMB_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Spirite_Emitter		3036962
+	765639643	Biome1_Version2_80_4-4_104_M1	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Biome1_Version2_80_4-4_104_M1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\GamePlay\Exploration\Biome1\Biome1_Version2_80_4-4_104_M1\Biome1_Version2_80_4-4_104_M1		55037024
+	879710703	Biome2_Version2_100_6-4_40m_1m	C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\SFX\Biome2_Version2_100_6-4_40m_1m_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\GamePlay\Exploration\Biome2\Biome2_Version2_100_6-4_40m_1m\Biome2_Version2_100_6-4_40m_1m		25401824
+

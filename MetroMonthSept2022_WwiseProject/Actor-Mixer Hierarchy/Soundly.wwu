@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6AA3DC03-780C-4CD4-829C-6EDE272FDAE8}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Soundly" ID="{6AA3DC03-780C-4CD4-829C-6EDE272FDAE8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Test" ID="{AA25FFD7-866E-4925-A77A-9D90516EA2E3}" ShortID="756615251">
+					<PropertyList>
+						<Property Name="Soundly:ActiveChannels" Type="string" Value="[]"/>
+						<Property Name="Soundly:FileID" Type="string" Value="SND58788"/>
+						<Property Name="Soundly:FileName" Type="string" Value="https://2-dot-soundly-server.appspot.com/?Type=GetFile&amp;SessionID=1663292026EH4nJTdOt1gcqjb_Cb1&amp;File=soundlyeu/1426367345Ff4sxqvM_wkFwG/SND58788/sfy_UjhQmcvuXKyguFmhQaarmRCWlZOosG"/>
+						<Property Name="Soundly:HandleStartTime" Type="string" Value="0"/>
+						<Property Name="Soundly:HandleStopTime" Type="string" Value="12.29721875"/>
+						<Property Name="Soundly:LibraryID" Type="string" Value="1426367345Ff4sxqvM_wkFwG"/>
+						<Property Name="Soundly:LibraryLocation" Type="string" Value="Cloud"/>
+						<Property Name="Soundly:PlaybackSpeed" Type="string" Value="1.0"/>
+						<Property Name="Soundly:ProcessList" Type="string" Value="[]"/>
+						<Property Name="Soundly:RenderedFileBitRate" Type="string" Value="3"/>
+						<Property Name="Soundly:RenderedFilePath" Type="string" Value="C:\Users\Sam\Soundly Audio\Scifi, Computer, Futuristic Technology, Confirm Tones, Short, Simple SND58788 1.wav"/>
+						<Property Name="Soundly:RenderedFileSampleRate" Type="string" Value="96000"/>
+						<Property Name="Soundly:SelectionStartTime" Type="string" Value="0.42"/>
+						<Property Name="Soundly:SelectionStopTime" Type="string" Value="0.46"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F6118C1E-55D1-412A-A136-85C3BE60E077}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E745D994-A77E-4221-9257-692DD7FB6E55}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Scifi, Computer, Futuristic Technology, Confirm Tones, Short, Simple SND58788 1" ID="{596CED65-FC7F-46FD-8302-5A03AD8153BC}">
+							<PropertyList>
+								<Property Name="Soundly:FileIDForAudioSource" Type="string" Value="SND58788"/>
+								<Property Name="TrimBegin" Type="Real64" Value="5.164831875"/>
+								<Property Name="TrimEnd" Type="Real64" Value="5.656720625"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Soundly Audio\Scifi, Computer, Futuristic Technology, Confirm Tones, Short, Simple SND58788 1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="219696849"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Scifi, Computer, Futuristic Technology, Confirm Tones, Short, Simple SND58788 1" ID="{596CED65-FC7F-46FD-8302-5A03AD8153BC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

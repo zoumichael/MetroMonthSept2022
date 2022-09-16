@@ -243,6 +243,7 @@ public class BossMovement : MonoBehaviour
             currHP -= 10;
             if (currHP <= 0)
             {
+			AkSoundEngine.PostEvent("Boss1_Die", gameObject);
                 Destroy(gameObject);
             }
             Destroy(collision);

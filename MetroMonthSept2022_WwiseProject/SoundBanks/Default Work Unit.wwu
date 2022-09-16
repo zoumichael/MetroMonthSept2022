@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3790E18E-B810-4434-AB34-2AC699C9D175}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{3790E18E-B810-4434-AB34-2AC699C9D175}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{BBE63B95-1753-45DB-A378-B818E5F38457}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music_Exploration" ID="{F5FABFFB-E1E4-400E-8A7A-E96DAC45A7F5}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Test" ID="{74755FD8-139E-43C2-A354-2D8832762F40}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Biome1" ID="{EB0E5199-5B1C-4521-AF00-9835CE773F7B}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Biome2" ID="{243BE00A-8377-46EC-92FB-B4ADE175654B}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Tree" ID="{04B5C2D1-3985-47DC-AC39-079581B85071}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{E2040184-AB3B-4B76-BA1F-04B51BAAA1C3}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_GamePlay" ID="{62C9EE15-2BDA-4D55-AA3A-7FBBE59475F0}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music_Combat" ID="{4D0B8DC7-8E31-4E36-94C3-2BF099793F99}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

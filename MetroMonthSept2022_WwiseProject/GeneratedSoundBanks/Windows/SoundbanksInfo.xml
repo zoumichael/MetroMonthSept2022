@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Game_Jam\MetroMonthSept2022\MetroMonthSept2022_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3613396453">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3243115119">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1900161504" Name="Boss1_Die" ObjectPath="\Events\Default Work Unit\Music_Folder\Boss1_Die" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="89505537" Name="GamePlay" ObjectPath="\States\Default Work Unit\Music_States\GamePlay"/>
+						<ActionSetStateEntry Id="1534528633" Name="V2" ObjectPath="\States\Default Work Unit\Biome1\V2"/>
+						<ActionSetStateEntry Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Exploration"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3692500719" Name="Boss2_Die" ObjectPath="\Events\Default Work Unit\Music_Folder\Boss2_Die" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="89505537" Name="GamePlay" ObjectPath="\States\Default Work Unit\Music_States\GamePlay"/>
+						<ActionSetStateEntry Id="1969791524" Name="V2_" ObjectPath="\States\Default Work Unit\Biome2\V2_"/>
+						<ActionSetStateEntry Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Exploration"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music_Folder\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="44555769" Language="SFX">
+							<ShortName>Title_77_4-4_15.25_M1.wav</ShortName>
+							<Path>SFX\Title_77_4-4_15.25_M1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="301277613" Language="SFX">
+							<ShortName>Biome1_Version1_80_4-4_104_M1.wav</ShortName>
+							<Path>SFX\Biome1_Version1_80_4-4_104_M1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="416949996" Language="SFX">
+							<ShortName>BossBattle_Intro_195_4-4_8_M1.wav</ShortName>
+							<Path>SFX\BossBattle_Intro_195_4-4_8_M1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="453793483" Language="SFX">
+							<ShortName>BossBattle_Loop_195_4-4_52_M1.wav</ShortName>
+							<Path>SFX\BossBattle_Loop_195_4-4_52_M1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="565659344" Language="SFX">
+							<ShortName>Biome2_Version1_100_6-4_40m_1m.wav</ShortName>
+							<Path>SFX\Biome2_Version1_100_6-4_40m_1m_D79FB2B7.wem</Path>
+						</File>
+						<File Id="637083855" Language="SFX">
+							<ShortName>GreatTree_77_4-4_44.25m_M1.wav</ShortName>
+							<Path>SFX\GreatTree_77_4-4_44.25m_M1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="765639643" Language="SFX">
+							<ShortName>Biome1_Version2_80_4-4_104_M1.wav</ShortName>
+							<Path>SFX\Biome1_Version2_80_4-4_104_M1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="879710703" Language="SFX">
+							<ShortName>Biome2_Version2_100_6-4_40m_1m.wav</ShortName>
+							<Path>SFX\Biome2_Version2_100_6-4_40m_1m_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{DDDCFF2D-7D08-45DB-8113-ECBAA5CCD0BB}">
+							<Children>
+								<SwitchContainer SwitchValue="{F2737A16-2474-4779-89E3-C7ACEED4AA26}">
+									<Children>
+										<SwitchContainer SwitchValue="{4F36BBE2-9EC5-4A1D-9A69-AFE853840924}">
+											<Children>
+												<SwitchContainer SwitchValue="{5F79A96F-E1C0-4BE2-BB62-2B2CEF1B5846}">
+													<Media>
+														<File Id="301277613"/>
+													</Media>
+												</SwitchContainer>
+												<SwitchContainer SwitchValue="{C42D218C-A003-470F-A17A-20140BBB2537}">
+													<Media>
+														<File Id="765639643"/>
+													</Media>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+										<SwitchContainer SwitchValue="{E572CD9B-1CD9-48EA-A36A-C81761E279B1}">
+											<Children>
+												<SwitchContainer SwitchValue="{3AB80E5E-27D9-4218-9F63-CD258FFBE9FA}">
+													<Media>
+														<File Id="565659344"/>
+													</Media>
+												</SwitchContainer>
+												<SwitchContainer SwitchValue="{5A074501-552B-4362-8B1B-AA8B86B2B7BD}">
+													<Media>
+														<File Id="879710703"/>
+													</Media>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+										<SwitchContainer SwitchValue="{21570F35-EAFB-4ABC-A600-ADE972AA0D78}">
+											<Media>
+												<File Id="637083855"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{7715A335-50FC-4EF4-8B17-470A71125035}">
+									<Media>
+										<File Id="416949996"/>
+										<File Id="453793483"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6EC6F291-C9C6-4FE2-BBCB-81C41FDD665A}">
+							<Media>
+								<File Id="44555769"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="1534528634" Name="V1" ObjectPath="\States\Default Work Unit\Biome1\V1"/>
+						<ActionSetStateEntry Id="1986569297" Name="V1_" ObjectPath="\States\Default Work Unit\Biome2\V1_"/>
+						<ActionSetStateEntry Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Exploration"/>
+						<ActionSetStateEntry Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Music_States\Title"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3258538016" Name="Music_Biome1" ObjectPath="\Events\Default Work Unit\Music_Folder\Music_Biome1" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="975021336" Name="Biome1" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Biome1"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3258538019" Name="Music_Biome2" ObjectPath="\Events\Default Work Unit\Music_Folder\Music_Biome2" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="975021339" Name="Biome2" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Biome2"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3944980085" Name="Music_Combat" ObjectPath="\Events\Default Work Unit\Music_Folder\Music_Combat" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Combat"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1078688352" Name="Music_Exploration" ObjectPath="\Events\Default Work Unit\Music_Folder\Music_Exploration" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="89505537" Name="GamePlay" ObjectPath="\States\Default Work Unit\Music_States\GamePlay"/>
+						<ActionSetStateEntry Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Exploration"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="620878633" Name="Music_GamePlay" ObjectPath="\Events\Default Work Unit\Music_Folder\Music_GamePlay" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="89505537" Name="GamePlay" ObjectPath="\States\Default Work Unit\Music_States\GamePlay"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="701652841" Name="Music_Tree" ObjectPath="\Events\Default Work Unit\Music_Folder\Music_Tree" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0.">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3322072369" Name="Tree" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Tree"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2720352881" Name="Play_Crystal_AMB" ObjectPath="\Events\Default Work Unit\Play_Crystal_AMB" MaxAttenuation="25." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="700385104" Language="SFX">
+							<ShortName>Crystal_AMB_Loop.wav</ShortName>
+							<Path>SFX\Crystal_AMB_Loop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="98439365" Name="Play_Player_FootSteps" ObjectPath="\Events\Default Work Unit\Play_Player_FootSteps" DurationType="OneShot" DurationMin="0.162272" DurationMax="0.260404">
+					<IncludedMemoryFiles>
+						<File Id="9652546" Language="SFX">
+							<ShortName>Player_FootSteps_Default_01.wav</ShortName>
+							<Path>SFX\Player_FootSteps_Default_01_10C4C929.wem</Path>
+						</File>
+						<File Id="318344466" Language="SFX">
+							<ShortName>Player_FootSteps_Default_05.wav</ShortName>
+							<Path>SFX\Player_FootSteps_Default_05_10C4C929.wem</Path>
+						</File>
+						<File Id="433422915" Language="SFX">
+							<ShortName>Player_FootSteps_Default_03.wav</ShortName>
+							<Path>SFX\Player_FootSteps_Default_03_10C4C929.wem</Path>
+						</File>
+						<File Id="546435147" Language="SFX">
+							<ShortName>Player_FootSteps_Default_04.wav</ShortName>
+							<Path>SFX\Player_FootSteps_Default_04_10C4C929.wem</Path>
+						</File>
+						<File Id="680299691" Language="SFX">
+							<ShortName>Player_FootSteps_Default_02.wav</ShortName>
+							<Path>SFX\Player_FootSteps_Default_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3157003241" Name="Test" ObjectPath="\Events\Default Work Unit\Test" DurationType="OneShot" DurationMin="0.491889" DurationMax="0.491889">
+					<IncludedMemoryFiles>
+						<File Id="219696849" Language="SFX">
+							<ShortName>Soundly Audio\Scifi, Computer, Futuristic Technology, Confirm Tones, Short, Simple SND58788 1.wav</ShortName>
+							<Path>SFX\Soundly Audio\Scifi, Computer, Futuristic Technology, Confirm Tones, Short, Simple SND58788 1_60A7AFE1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="89505537" Name="GamePlay" ObjectPath="\States\Default Work Unit\Music_States\GamePlay" GUID="{DDDCFF2D-7D08-45DB-8113-ECBAA5CCD0BB}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="450540413" Name="Music_Exploration_States" ObjectPath="\States\Default Work Unit\Music_Exploration_States" GUID="{7558AC10-A061-4F64-A940-35CAB4129A44}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_Exploration_States\None" GUID="{066D31B1-9DAB-4474-909C-F469303B149A}"/>
+						<State Id="975021336" Name="Biome1" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Biome1" GUID="{4F36BBE2-9EC5-4A1D-9A69-AFE853840924}"/>
+						<State Id="975021339" Name="Biome2" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Biome2" GUID="{E572CD9B-1CD9-48EA-A36A-C81761E279B1}"/>
+						<State Id="3322072369" Name="Tree" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Tree" GUID="{21570F35-EAFB-4ABC-A600-ADE972AA0D78}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="975021336" Name="Biome1" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Biome1" GUID="{4F36BBE2-9EC5-4A1D-9A69-AFE853840924}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="975021339" Name="Biome2" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Biome2" GUID="{E572CD9B-1CD9-48EA-A36A-C81761E279B1}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1534528633" Name="V2" ObjectPath="\States\Default Work Unit\Biome1\V2" GUID="{C42D218C-A003-470F-A17A-20140BBB2537}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1534528634" Name="V1" ObjectPath="\States\Default Work Unit\Biome1\V1" GUID="{5F79A96F-E1C0-4BE2-BB62-2B2CEF1B5846}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1690668539" Name="Music_States" ObjectPath="\States\Default Work Unit\Music_States" GUID="{E68A710F-541A-4477-995B-61EE1599D835}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_States\None" GUID="{77D3B119-43C6-48CB-8707-4751DD10A6BC}"/>
+						<State Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Music_States\Title" GUID="{6EC6F291-C9C6-4FE2-BBCB-81C41FDD665A}"/>
+						<State Id="89505537" Name="GamePlay" ObjectPath="\States\Default Work Unit\Music_States\GamePlay" GUID="{DDDCFF2D-7D08-45DB-8113-ECBAA5CCD0BB}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1969791524" Name="V2_" ObjectPath="\States\Default Work Unit\Biome2\V2_" GUID="{5A074501-552B-4362-8B1B-AA8B86B2B7BD}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1986569297" Name="V1_" ObjectPath="\States\Default Work Unit\Biome2\V1_" GUID="{3AB80E5E-27D9-4218-9F63-CD258FFBE9FA}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Exploration" GUID="{F2737A16-2474-4779-89E3-C7ACEED4AA26}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Combat" GUID="{7715A335-50FC-4EF4-8B17-470A71125035}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3322072369" Name="Tree" ObjectPath="\States\Default Work Unit\Music_Exploration_States\Tree" GUID="{21570F35-EAFB-4ABC-A600-ADE972AA0D78}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Music_States\Title" GUID="{6EC6F291-C9C6-4FE2-BBCB-81C41FDD665A}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4064220498" Name="Music_GamePlay_States" ObjectPath="\States\Default Work Unit\Music_GamePlay_States" GUID="{C7E85CB3-0C03-4A6D-A920-872875906F01}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\None" GUID="{DB08F790-DA99-4330-87CD-3A60D63838F0}"/>
+						<State Id="2764240573" Name="Combat" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Combat" GUID="{7715A335-50FC-4EF4-8B17-470A71125035}"/>
+						<State Id="2582085496" Name="Exploration" ObjectPath="\States\Default Work Unit\Music_GamePlay_States\Exploration" GUID="{F2737A16-2474-4779-89E3-C7ACEED4AA26}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

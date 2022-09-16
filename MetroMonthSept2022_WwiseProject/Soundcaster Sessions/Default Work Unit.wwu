@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2418BF79-F32D-45BA-8C47-7C4E41F54E74}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{2418BF79-F32D-45BA-8C47-7C4E41F54E74}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{B85E02FD-60AF-48B7-9F53-31CF97C08A2A}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Music" ID="{E2040184-AB3B-4B76-BA1F-04B51BAAA1C3}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Boss1_Die" ID="{DDA8F057-D25A-4B14-A2F2-047A8D39BAB4}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_GamePlay" ID="{62C9EE15-2BDA-4D55-AA3A-7FBBE59475F0}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Biome1" ID="{EB0E5199-5B1C-4521-AF00-9835CE773F7B}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Biome2" ID="{243BE00A-8377-46EC-92FB-B4ADE175654B}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Exploration" ID="{F5FABFFB-E1E4-400E-8A7A-E96DAC45A7F5}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Combat" ID="{4D0B8DC7-8E31-4E36-94C3-2BF099793F99}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Tree" ID="{04B5C2D1-3985-47DC-AC39-079581B85071}" WorkUnitID="{71B97396-7BD0-4FE7-B03E-D4BC4B1E4E5C}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="GamePlay" ID="{DDDCFF2D-7D08-45DB-8113-ECBAA5CCD0BB}"/>
+						<CurrentStateRef Name="V2" ID="{C42D218C-A003-470F-A17A-20140BBB2537}"/>
+						<CurrentStateRef Name="V1_" ID="{3AB80E5E-27D9-4218-9F63-CD258FFBE9FA}"/>
+						<CurrentStateRef Name="Exploration" ID="{F2737A16-2474-4779-89E3-C7ACEED4AA26}"/>
+						<CurrentStateRef Name="Biome2" ID="{E572CD9B-1CD9-48EA-A36A-C81761E279B1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

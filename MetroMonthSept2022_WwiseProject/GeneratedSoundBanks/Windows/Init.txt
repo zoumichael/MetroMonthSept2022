@@ -1,0 +1,32 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	450540413	Music_Exploration_States			\Default Work Unit\Music_Exploration_States	
+	975021336	Biome1			\Default Work Unit\Biome1	
+	975021339	Biome2			\Default Work Unit\Biome2	
+	1690668539	Music_States			\Default Work Unit\Music_States	
+	4064220498	Music_GamePlay_States			\Default Work Unit\Music_GamePlay_States	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_Exploration_States			
+	975021336	Biome1	Music_Exploration_States			
+	975021339	Biome2	Music_Exploration_States			
+	3322072369	Tree	Music_Exploration_States			
+	748895195	None	Biome1			
+	1534528633	V2	Biome1			
+	1534528634	V1	Biome1			
+	748895195	None	Biome2			
+	1969791524	V2_	Biome2			
+	1986569297	V1_	Biome2			
+	89505537	GamePlay	Music_States			
+	748895195	None	Music_States			
+	3705726509	Title	Music_States			
+	748895195	None	Music_GamePlay_States			
+	2582085496	Exploration	Music_GamePlay_States			
+	2764240573	Combat	Music_GamePlay_States			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{18B6790B-3C8A-49BF-ACE3-C37AAE873650}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{18B6790B-3C8A-49BF-ACE3-C37AAE873650}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Music_States" ID="{E68A710F-541A-4477-995B-61EE1599D835}">
+					<ChildrenList>
+						<State Name="None" ID="{77D3B119-43C6-48CB-8707-4751DD10A6BC}"/>
+						<State Name="Title" ID="{6EC6F291-C9C6-4FE2-BBCB-81C41FDD665A}"/>
+						<State Name="GamePlay" ID="{DDDCFF2D-7D08-45DB-8113-ECBAA5CCD0BB}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Music_Exploration_States" ID="{7558AC10-A061-4F64-A940-35CAB4129A44}">
+					<ChildrenList>
+						<State Name="None" ID="{066D31B1-9DAB-4474-909C-F469303B149A}"/>
+						<State Name="Biome1" ID="{4F36BBE2-9EC5-4A1D-9A69-AFE853840924}"/>
+						<State Name="Biome2" ID="{E572CD9B-1CD9-48EA-A36A-C81761E279B1}"/>
+						<State Name="Tree" ID="{21570F35-EAFB-4ABC-A600-ADE972AA0D78}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Music_GamePlay_States" ID="{C7E85CB3-0C03-4A6D-A920-872875906F01}">
+					<ChildrenList>
+						<State Name="None" ID="{DB08F790-DA99-4330-87CD-3A60D63838F0}"/>
+						<State Name="Combat" ID="{7715A335-50FC-4EF4-8B17-470A71125035}"/>
+						<State Name="Exploration" ID="{F2737A16-2474-4779-89E3-C7ACEED4AA26}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Biome1" ID="{7228FB26-00C2-4696-AD04-BB8FE84CB5DD}">
+					<ChildrenList>
+						<State Name="None" ID="{43532A89-C2E9-40F5-BBF7-6607DCF88408}"/>
+						<State Name="V1" ID="{5F79A96F-E1C0-4BE2-BB62-2B2CEF1B5846}"/>
+						<State Name="V2" ID="{C42D218C-A003-470F-A17A-20140BBB2537}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Biome2" ID="{50AA3FAA-9459-487E-A8FE-8671441830D8}">
+					<ChildrenList>
+						<State Name="None" ID="{4A3B07E4-2DA2-488C-ACA1-B399F9C224B9}"/>
+						<State Name="V1_" ID="{3AB80E5E-27D9-4218-9F63-CD258FFBE9FA}"/>
+						<State Name="V2_" ID="{5A074501-552B-4362-8B1B-AA8B86B2B7BD}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cad7802b9671245af149c1a6866efe, type: 3}
+  m_Name: 21570F35-EAFB-4ABC-A600-ADE972AA0D78
+  m_EditorClassIdentifier: 
+  objectName: Tree
+  id: 3322072369
+  guid: 21570F35-EAFB-4ABC-A600-ADE972AA0D78
+  WwiseStateGroupReference: {fileID: 11400000, guid: 621cd8b66562b6848ac3eab4ec74d1d1, type: 2}

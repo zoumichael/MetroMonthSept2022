@@ -1,0 +1,676 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e109819019f5745b3c24997f334975, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1c1aa873e0f53240a14bdfe7c692889a
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: 1c1aa873e0f53240a14bdfe7c692889a
+    GuidInternal: 
+    m_lastTime: -8585383165713057645
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 94d945e77ea721429257692dd7fb6e55
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 94d945e77ea721429257692dd7fb6e55
+    GuidInternal: 
+    m_lastTime: -8585383165713347910
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 94d945e77ea721429257692dd7fb6e55
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 8ee1903710b83444ab342ac699c9d175
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 8ee1903710b83444ab342ac699c9d175
+    GuidInternal: 
+    m_lastTime: -8585383126478314299
+    List:
+    - name: Main
+      guid: 953be6bb5317db45a378b818e5f38457
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8ee1903710b83444ab342ac699c9d175
+      - ElementName: Main
+        ObjectType: 7
+        guid: 953be6bb5317db45a378b818e5f38457
+      Path: SoundBanks\Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+    ParentPath: Events\Default Work Unit
+    guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+    GuidInternal: 
+    m_lastTime: -8585383126478444417
+    List:
+    - name: Boss1_Die
+      guid: 57f0a8dd5ad2144ba2f2047a8d39bab4
+      id: 1900161504
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Boss1_Die
+        ObjectType: 3
+        guid: 57f0a8dd5ad2144ba2f2047a8d39bab4
+      Path: Events\Default Work Unit\Boss1_Die
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Boss2_Die
+      guid: 03454baf594db14ca362707d9bf8979a
+      id: 3692500719
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Boss2_Die
+        ObjectType: 3
+        guid: 03454baf594db14ca362707d9bf8979a
+      Path: Events\Default Work Unit\Boss2_Die
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music
+      guid: 840104e23bab764bba1f04b51baaa1c3
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Music
+        ObjectType: 3
+        guid: 840104e23bab764bba1f04b51baaa1c3
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Biome1
+      guid: 99510eeb1c5b2145af009835ce773f7b
+      id: 3258538016
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Music_Biome1
+        ObjectType: 3
+        guid: 99510eeb1c5b2145af009835ce773f7b
+      Path: Events\Default Work Unit\Music_Biome1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music_Biome2
+      guid: 0ae03b247783ec4692fbb4ade175654b
+      id: 3258538019
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Music_Biome2
+        ObjectType: 3
+        guid: 0ae03b247783ec4692fbb4ade175654b
+      Path: Events\Default Work Unit\Music_Biome2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music_Combat
+      guid: c78d0b4d318e364e94c32bf099793f99
+      id: 3944980085
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Music_Combat
+        ObjectType: 3
+        guid: c78d0b4d318e364e94c32bf099793f99
+      Path: Events\Default Work Unit\Music_Combat
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music_Exploration
+      guid: fbbffaf5e4e10e408a7ae96dac45a7f5
+      id: 1078688352
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Music_Exploration
+        ObjectType: 3
+        guid: fbbffaf5e4e10e408a7ae96dac45a7f5
+      Path: Events\Default Work Unit\Music_Exploration
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music_GamePlay
+      guid: 15eec962da2b554daa3a7fbbe59475f0
+      id: 620878633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Music_GamePlay
+        ObjectType: 3
+        guid: 15eec962da2b554daa3a7fbbe59475f0
+      Path: Events\Default Work Unit\Music_GamePlay
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Music_Tree
+      guid: d1c2b5048539dc47ac39079581b85071
+      id: 701652841
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Music_Tree
+        ObjectType: 3
+        guid: d1c2b5048539dc47ac39079581b85071
+      Path: Events\Default Work Unit\Music_Tree
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Test
+      guid: d85f75749e13c243a3542d8832762f40
+      id: 3157003241
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9673b971d07be74fb03ed4bc4b1e4e5c
+      - ElementName: Test
+        ObjectType: 3
+        guid: d85f75749e13c243a3542d8832762f40
+      Path: Events\Default Work Unit\Test
+      maxAttenuation: 0
+      maxDuration: 0.491889
+      minDuration: 0.491889
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: b4a321459bc46c4988a264176c981ec5
+    ParentPath: Game Parameters\Default Work Unit
+    guid: b4a321459bc46c4988a264176c981ec5
+    GuidInternal: 
+    m_lastTime: -8585383165713928421
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 0b79b6188a3cbf49ace3c37aae873650
+    ParentPath: States\Default Work Unit
+    guid: 0b79b6188a3cbf49ace3c37aae873650
+    GuidInternal: 
+    m_lastTime: -8585383153233518042
+    List:
+    - name: Biome1
+      guid: 26fb2872c2009646ad04bb8fe84cb5dd
+      id: 975021336
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b79b6188a3cbf49ace3c37aae873650
+      - ElementName: Biome1
+        ObjectType: 9
+        guid: 26fb2872c2009646ad04bb8fe84cb5dd
+      Path: States\Default Work Unit\Biome1
+      values:
+      - name: None
+        guid: 892a5343e9c2f540bbf76607dcf88408
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Biome1
+          ObjectType: 9
+          guid: 26fb2872c2009646ad04bb8fe84cb5dd
+        - ElementName: None
+          ObjectType: 8
+          guid: 892a5343e9c2f540bbf76607dcf88408
+      - name: V1
+        guid: 6fa9795fc0e1e24bbb622b2cef1b5846
+        id: 1534528634
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Biome1
+          ObjectType: 9
+          guid: 26fb2872c2009646ad04bb8fe84cb5dd
+        - ElementName: V1
+          ObjectType: 8
+          guid: 6fa9795fc0e1e24bbb622b2cef1b5846
+      - name: V2
+        guid: 8c212dc403a00f47a17a20140bbb2537
+        id: 1534528633
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Biome1
+          ObjectType: 9
+          guid: 26fb2872c2009646ad04bb8fe84cb5dd
+        - ElementName: V2
+          ObjectType: 8
+          guid: 8c212dc403a00f47a17a20140bbb2537
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Biome2
+      guid: aa3faa5059947e48a8fe8671441830d8
+      id: 975021339
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b79b6188a3cbf49ace3c37aae873650
+      - ElementName: Biome2
+        ObjectType: 9
+        guid: aa3faa5059947e48a8fe8671441830d8
+      Path: States\Default Work Unit\Biome2
+      values:
+      - name: None
+        guid: e4073b4aa22d8c48aca1b399f9c224b9
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Biome2
+          ObjectType: 9
+          guid: aa3faa5059947e48a8fe8671441830d8
+        - ElementName: None
+          ObjectType: 8
+          guid: e4073b4aa22d8c48aca1b399f9c224b9
+      - name: V1_
+        guid: 5e0eb83ad92718429f63cd258ffbe9fa
+        id: 1986569297
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Biome2
+          ObjectType: 9
+          guid: aa3faa5059947e48a8fe8671441830d8
+        - ElementName: V1_
+          ObjectType: 8
+          guid: 5e0eb83ad92718429f63cd258ffbe9fa
+      - name: V2_
+        guid: 0145075a2b5562438b1baa8b86b2b7bd
+        id: 1969791524
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Biome2
+          ObjectType: 9
+          guid: aa3faa5059947e48a8fe8671441830d8
+        - ElementName: V2_
+          ObjectType: 8
+          guid: 0145075a2b5562438b1baa8b86b2b7bd
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Music_Exploration_States
+      guid: 10ac587561a0644fa94035cab4129a44
+      id: 450540413
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b79b6188a3cbf49ace3c37aae873650
+      - ElementName: Music_Exploration_States
+        ObjectType: 9
+        guid: 10ac587561a0644fa94035cab4129a44
+      Path: States\Default Work Unit\Music_Exploration_States
+      values:
+      - name: Biome1
+        guid: e2bb364fc59e1d4a9a69afe853840924
+        id: 975021336
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_Exploration_States
+          ObjectType: 9
+          guid: 10ac587561a0644fa94035cab4129a44
+        - ElementName: Biome1
+          ObjectType: 8
+          guid: e2bb364fc59e1d4a9a69afe853840924
+      - name: Biome2
+        guid: 9bcd72e5d91cea48a36ac81761e279b1
+        id: 975021339
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_Exploration_States
+          ObjectType: 9
+          guid: 10ac587561a0644fa94035cab4129a44
+        - ElementName: Biome2
+          ObjectType: 8
+          guid: 9bcd72e5d91cea48a36ac81761e279b1
+      - name: None
+        guid: b1316d06ab9d7444909cf469303b149a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_Exploration_States
+          ObjectType: 9
+          guid: 10ac587561a0644fa94035cab4129a44
+        - ElementName: None
+          ObjectType: 8
+          guid: b1316d06ab9d7444909cf469303b149a
+      - name: Tree
+        guid: 350f5721fbeabc4aa600ade972aa0d78
+        id: 3322072369
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_Exploration_States
+          ObjectType: 9
+          guid: 10ac587561a0644fa94035cab4129a44
+        - ElementName: Tree
+          ObjectType: 8
+          guid: 350f5721fbeabc4aa600ade972aa0d78
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Music_GamePlay_States
+      guid: b35ce8c7030c6d4aa920872875906f01
+      id: 4064220498
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b79b6188a3cbf49ace3c37aae873650
+      - ElementName: Music_GamePlay_States
+        ObjectType: 9
+        guid: b35ce8c7030c6d4aa920872875906f01
+      Path: States\Default Work Unit\Music_GamePlay_States
+      values:
+      - name: Combat
+        guid: 35a31577fc50f44e8b17470a71125035
+        id: 2764240573
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_GamePlay_States
+          ObjectType: 9
+          guid: b35ce8c7030c6d4aa920872875906f01
+        - ElementName: Combat
+          ObjectType: 8
+          guid: 35a31577fc50f44e8b17470a71125035
+      - name: Exploration
+        guid: 167a73f27424794789e3c7aceed4aa26
+        id: 2582085496
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_GamePlay_States
+          ObjectType: 9
+          guid: b35ce8c7030c6d4aa920872875906f01
+        - ElementName: Exploration
+          ObjectType: 8
+          guid: 167a73f27424794789e3c7aceed4aa26
+      - name: None
+        guid: 90f708db99da304387cd3a60d63838f0
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_GamePlay_States
+          ObjectType: 9
+          guid: b35ce8c7030c6d4aa920872875906f01
+        - ElementName: None
+          ObjectType: 8
+          guid: 90f708db99da304387cd3a60d63838f0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Music_States
+      guid: 0f718ae61a547744995b61ee1599d835
+      id: 1690668539
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 0b79b6188a3cbf49ace3c37aae873650
+      - ElementName: Music_States
+        ObjectType: 9
+        guid: 0f718ae61a547744995b61ee1599d835
+      Path: States\Default Work Unit\Music_States
+      values:
+      - name: GamePlay
+        guid: 2dffdcdd087ddb458113ecbaa5ccd0bb
+        id: 89505537
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: 0f718ae61a547744995b61ee1599d835
+        - ElementName: GamePlay
+          ObjectType: 8
+          guid: 2dffdcdd087ddb458113ecbaa5ccd0bb
+      - name: None
+        guid: 19b1d377c643cb4887074751dd10a6bc
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: 0f718ae61a547744995b61ee1599d835
+        - ElementName: None
+          ObjectType: 8
+          guid: 19b1d377c643cb4887074751dd10a6bc
+      - name: Title
+        guid: 91f2c66ec6c9e24fbbcb81c41fdd665a
+        id: 3705726509
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 0b79b6188a3cbf49ace3c37aae873650
+        - ElementName: Music_States
+          ObjectType: 9
+          guid: 0f718ae61a547744995b61ee1599d835
+        - ElementName: Title
+          ObjectType: 8
+          guid: 91f2c66ec6c9e24fbbcb81c41fdd665a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 743493558ce7ef498fa1c9a63816377f
+    ParentPath: Switches\Default Work Unit
+    guid: 743493558ce7ef498fa1c9a63816377f
+    GuidInternal: 
+    m_lastTime: -8585383165713998495
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: eb2a4419dcb014419622da7d316dc7f6
+    ParentPath: Triggers\Default Work Unit
+    guid: eb2a4419dcb014419622da7d316dc7f6
+    GuidInternal: 
+    m_lastTime: -8585383165713648168
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000a0000000b0000000e000000
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 
